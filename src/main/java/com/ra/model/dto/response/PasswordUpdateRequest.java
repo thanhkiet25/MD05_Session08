@@ -1,4 +1,16 @@
 package com.ra.model.dto.response;
 
-public class PasswordupdateRequest {
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
+public class PasswordUpdateRequest {
+    private String oldPassword;
+    private String newPassword;
+    private String confirmNewPassword;
 }
